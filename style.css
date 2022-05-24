@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: violet;
+}
+
+header {
+    background-color: gray;
+    width: 100%;
+    height: 35px;
+}
+
+.container {
+  background-color: brown;
+  display: flex;
+  margin: 0 0 auto;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  background-color: aqua;
+  border: 1px black solid;
+  height: 350px;
+  padding: 3rem;
+}
+
+h1 {
+  border: 1px black dotted;
+  margin-bottom: 50px;
+}
+
+button {
+  border: 1px black dotted;
+  margin-left: 50px;
+  padding: 3px;
+}
+
+input {
+  padding: 3px;
+  margin-bottom: 20px;
+  border: 1px black dotted;
+}

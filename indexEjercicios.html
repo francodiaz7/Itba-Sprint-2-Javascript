@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio if</title>
+  </head>
+  <body>
+    <h1>Este es una página simple</h1>
+    <p>En ella voy a hacer un ejercicio</p>
+    <script>
+      //   let age = prompt("¿Cuál es tu edad?", "");
+      //   let accessAllowed = age >= 18 ? true : false;
+      // //   let accessAllowed = age >= 18;
+      //   if (accessAllowed == false) {
+      //     alert("Acceso denegado");
+      //     // document.body.innerHTML = "Acceso denegado, intente denuevo";
+      //     document.documentElement.innerHTML =
+      //       "<pre>" +
+      //       document.documentElement.innerHTML.replace(/</g, "&lt;") +
+      //       "</pre>";
+      //   }
+
+      //   Ejercicio 1 El nombre de JavaScript
+
+      //   let respuesta = prompt("¿Cuál es el nombre “oficial” de JavaScript?", "");
+      //   if (respuesta == "ECMAScript") {
+      //     alert("¡Correcto!");
+      //   } else {
+      //     alert("¿No lo sabes? ¡ECMAScript!");
+      //   }
+
+      //   Ejercicio 2 Muestra el signo
+
+      //   let number = prompt("Ingrese un número");
+      //   if (number > 0) {
+      //     alert("1, si el valor es mayor que cero,");
+      //   } else if (number < 0) {
+      //     alert("-1, si es menor que cero,");
+      //   } else if (number == 0) {
+      //     alert("0, si es igual a cero.");
+      //   }
+
+      //   Ejercicio 3 Reescribe el 'if' como '?'
+
+      let result;
+      if (a + b < 4) {
+        result = "Debajo";
+      } else {
+        result = "Encima";
+      }
+
+      // Resultado mio
+      let result2 = a + b < 4 ? "Debajo" : "Arriba";
+
+      //   Ejercicio 4 Reescribe el 'if' como '?'
+
+      let message;
+
+      if (login == "Empleado") {
+        message = "Hola";
+      } else if (login == "Director") {
+        message = "Felicidades";
+      } else if (login == "") {
+        message = "Sin sesión";
+      } else {
+        message = "";
+      }
+
+      //   Resultado mio
+      let message2 =
+        login == "Empleado"
+          ? "Hola"
+          : login == "Director"
+          ? "Felicidades"
+          : login == ""
+          ? "Sin sesión"
+          : "";
+    </script>
+  </body>
+</html>
