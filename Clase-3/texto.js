@@ -1,3 +1,5 @@
+// Recitar oldmacdonald
+
 function oldmacdonald() {
   const animal = "cow,pig,chicken";
   const animalito = animal.split(",");
@@ -21,6 +23,8 @@ function oldmacdonald() {
   }
 }
 
+// Comenta la temperatura
+
 function temperatura(valor) {
   let output =
     0 >= valor
@@ -34,7 +38,7 @@ function temperatura(valor) {
   return output;
 }
 
-// Ejercicio 2 Muestra el signo
+// Señala el signo
 
 function signo(numero) {
   let output =
@@ -46,4 +50,18 @@ function signo(numero) {
       ? "El número ingresado es igual a cero"
       : "Error";
   return output;
+}
+
+// Funcion login
+
+function login(Perfil) {
+  let cuenta =
+    Perfil == "Empleado"
+      ? "Hola"
+      : Perfil == "Director"
+      ? "Felicidades"
+      : Perfil == ""
+      ? "Sin sesión"
+      : "Error";
+  return cuenta;
 }
