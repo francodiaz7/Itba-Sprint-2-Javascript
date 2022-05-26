@@ -33,3 +33,17 @@ function temperatura(valor) {
 
   return output;
 }
+
+// Ejercicio 2 Muestra el signo
+
+function signo(numero) {
+  let output =
+    numero > 0
+      ? "El número ingresado es mayor que cero"
+      : numero < 0
+      ? "El número ingresado es menor que cero"
+      : numero === 0
+      ? "El número ingresado es igual a cero"
+      : "Error";
+  return output;
+}
