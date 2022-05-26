@@ -1,16 +1,15 @@
 // Recitar oldmacdonald
 
 function oldmacdonald() {
-  const animal = "cow,pig,chicken";
-  const animalito = animal.split(",");
-  const sound = "moo,oink,bawk";
-  const sonido = sound.split(",");
+  const animales = "cow,pig,chicken";
+  const animal = animales.split(",");
+  const sonidos = "moo,oink,bawk";
+  const sonido = sonidos.split(",");
   let numero = 0;
-  let say = console.log;
   while (numero != 3) {
     console.log("Old MACDONALD had a farm");
     console.log("E-I-E-I-O");
-    console.log("And on his farm he had a " + animalito[numero]);
+    console.log("And on his farm he had a " + animal[numero]);
     console.log("E-I-E-I-O");
     console.log("With a " + sonido[numero], "" + sonido[numero], "here");
     console.log("And a " + sonido[numero], "" + sonido[numero], "there");
