@@ -20,3 +20,16 @@ function oldmacdonald() {
     numero = numero + 1;
   }
 }
+
+function temperatura(valor) {
+  let output =
+    0 >= valor
+      ? "El arte es morirse de frío"
+      : 16 >= valor
+      ? "Está fresco para pasear en jaula"
+      : 16 < valor
+      ? "Maldición, va a ser un día hermoso"
+      : "Error";
+
+  return output;
+}
