@@ -1,0 +1,27 @@
+function triple(x) {
+  return x * 3;
+}
+
+function esPar(x) {
+  return x % 2 === 0;
+}
+
+function esDivisiblePor(x,y) {
+  return x % y === 0;
+}
+
+function esBisiesto(año) {
+  return (esDivisiblePor(año,4) && (!esDivisiblePor(año,100))) || (esDivisiblePor(año,400));
+}
+
+function esMasLargaQue(s,n) {
+  return s.length > n; 
+}
+
+function descuento(precio,descuento) {
+  return precio - (precio*descuento)/100;
+}
+
+function area(radio) {
+  return ((radio**2) *Math.PI);
+}
