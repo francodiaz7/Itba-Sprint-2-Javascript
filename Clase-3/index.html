@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Funciones</h1>
+    </header>
+    <section class="container">
+    <article class="post">
+      <h2>Función canción</h1>
+      <p>Esta función lo que hace es devolver la letra de una canción, usando funciones y constantes para las partes que cambian</p>
+      <div id="codigo-ejemplo">
+        <pre class="pre">
+          <code id="codigo">
+  function oldmacdonald() {
+  const animales = "cow,pig,chicken";
+  const animal = animales.split(",");
+  const sonidos = "moo,oink,bawk";
+  const sonido = sonidos.split(",");
+  let numero = 0;
+  while (numero != 3) {
+    console.log("Old MACDONALD had a farm");
+    console.log("E-I-E-I-O");
+    console.log("And on his farm he had a " + animal[numero]);
+    console.log("E-I-E-I-O");
+    console.log("With a " + sonido[numero], "" + sonido[numero], "here");
+    console.log("And a " + sonido[numero], "" + sonido[numero], "there");
+    console.log("Here a " + sonido[numero] + ", there a", sonido[numero]);
+    console.log("Everywhere a " + sonido[numero], "" + sonido[numero]);
+    console.log("Old MacDonald had a farm");
+    console.log("E-I-E-I-O");
+    console.log("");
+    numero = numero + 1;
+    }
+  }
+         </code>
+        </pre>
+      </div>
+      <input type="number" placeholder="Deshabilitado" disabled hidden/>
+      <button type="submit" onclick="oldmacdonald2(),mostrar('cerrar',),mostrar('escribir'),mostrar('reset');" id="oldmacdonald">Ejecutar función</button>
+      <button class="hidden" id="cerrar" onclick="ocultar('cerrar'),reset('escribir'),ocultar('escribir'),ocultar('reset')">Cerrar</button>
+      <button class="hidden" id="reset"onclick="reset('escribir')">Reiniciar</button>
+      <div id="escribir" class="hidden">
+      </div>
+      </article>
+
+    <article class="post">
+      <h2>Título de función</h1>
+      <p>Descripción de la función</p>
+      <pre>
+        <code>
+          Insertar codigo aca
+        </code>
+      </pre>
+      <input type="text" placeholder="Ingrese un número"/>
+      <button type="submit" onclick="doFuncion()">Ejecutar función</button>
+    </article>
+    <article class="post">
+      <h2>Título de función</h1>
+      <p>Descripción de la función</p>
+      <pre>
+        <code>
+          Insertar codigo aca
+        </code>
+      </pre>
+      <input type="text" placeholder="Ingrese un número"/>
+      <button type="submit" onclick="doFuncion()">Ejecutar función</button>
+    </article>
+    <article class="post">
+      <h2>Título de función</h1>
+      <p>Descripción de la función</p>
+      <pre>
+        <code>
+          Insertar codigo aca
+        </code>
+      </pre>
+      <input type="text" placeholder="Ingrese un número"/>
+      <button type="submit" onclick="doFuncion()">Ejecutar función</button>
+    </article>
+    </section>
+    <script src="funciones.js">
+    </script>
+  </body>
+</html>
