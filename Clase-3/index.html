@@ -51,15 +51,27 @@
       </article>
 
     <article class="post">
-      <h2>Título de función</h1>
-      <p>Descripción de la función</p>
+      <h2>Temperatura</h1>
+      <p>Ingresa un número y regresa cierto comentario dependiendo del valor.</p>
       <pre>
         <code>
-          Insertar codigo aca
+function temperatura2(valor) {
+  return 0 >= valor
+    ? "El arte es morirse de frío"
+    : 16 >= valor
+    ? "Está fresco apra pasear en jaula"
+    : 16 < valor
+    ? "Maldición, va a ser un día hermoso"
+    : "Error";
+}
         </code>
       </pre>
-      <input type="text" placeholder="Ingrese un número"/>
-      <button type="submit" onclick="doFuncion()">Ejecutar función</button>
+      <input id="input2" type="text" placeholder="Ingrese un número"/>
+      <button type="submit" onclick="temperatura3(),mostrar('cerrar2',),mostrar('escribir2'),mostrar('reset2');" id="oldmacdonald">Ejecutar función</button>
+      <button class="hidden" id="cerrar2" onclick="ocultar('cerrar2'),reset('escribir2'),ocultar('escribir2'),ocultar('reset')">Cerrar</button>
+      <button class="hidden" id="reset2"onclick="reset('escribir2')">Reiniciar</button>
+      <div id="escribir2" class="hidden">
+      </div>
     </article>
     <article class="post">
       <h2>Título de función</h1>

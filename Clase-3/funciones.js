@@ -44,40 +44,16 @@ function oldmacdonald2() {
     creative("E-I-E-I-O");
     creative("And on his farm he had a " + animal[i]);
     creative("E-I-E-I-O");
-    creative("With a " + sonido[i], "" + sonido[i], "here");
-    creative("And a " + sonido[i], "" + sonido[i], "there");
-    creative("Here a " + sonido[i] + ", there a", sonido[i]);
-    creative("Everywhere a " + sonido[i], "" + sonido[i]);
+    creative("With a " + sonido[i] + " " + sonido[i] + " here");
+    creative("And a " + sonido[i] + " " + sonido[i] + " there");
+    creative("Here a " + sonido[i] + ", there a " + sonido[i]);
+    creative("Everywhere a " + sonido[i] + " " + sonido[i]);
     creative("Old MacDonald had a farm");
     creative("E-I-E-I-O");
     creative("");
   }
 }
-function oldmacdonald3() {
-  const animal = "cow,pig,chicken".split(",");
-  const sonido = "moo,oink,bawk".split(",");
-  const numbers = [45, 4, 9, 16, 25];
-  const cantos = [
-    "Old MACDONALD had a farm",
-    "E-I-E-I-O",
-    "And on his farm he had a " + animal[i],
-    "E-I-E-I-O",
-    "With a " + sonido[i] + "" + sonido[i] + "here",
-    "And a " + sonido[i] + "" + sonido[i] + "there",
-    "Here a " + sonido[i] + ", there a" + sonido[i],
-    "Everywhere a " + sonido[i] + "" + sonido[i],
-    "Old MacDonald had a farm",
-    "E-I-E-I-O",
-    "",
-  ];
-  let txt = "";
-  cantos.forEach(myFunction);
-  document.getElementById("demo").innerHTML = txt;
 
-  function myFunction(value, index, array) {
-    txt += value + "<br>";
-  }
-}
 // Comenta la temperatura
 
 function temperatura(valor) {
@@ -101,6 +77,19 @@ function temperatura2(valor) {
     : 16 < valor
     ? "Maldición, va a ser un día hermoso"
     : "Error";
+}
+
+function temperatura3() {
+  let valor = document.getElementById("input2").value;
+  let output =
+    0 >= valor
+      ? "El arte es morirse de frío"
+      : 16 >= valor
+      ? "Está fresco para pasear en jaula"
+      : 16 < valor
+      ? "Maldición, va a ser un día hermoso"
+      : "Error";
+  document.getElementById("escribir2").innerHTML = output;
 }
 
 // Señala el signo

@@ -94,7 +94,7 @@ button {
   display: block;
 }
 
-#escribir {
+#escribir, #escribir2 {
   background-color: #f2f1f1;
   border-radius: 0.5rem;
   margin: 1rem 0 2rem;
