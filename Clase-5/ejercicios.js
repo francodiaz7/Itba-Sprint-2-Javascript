@@ -15,22 +15,15 @@ let arrayCorreosAdmitidos = [
 let arrayCorreosDescartados = [];
 
 function verificarCorreo(correo) {
-    
-  correo.forEach(function (element, index, arreglo) {
-    if (element.includes("@")) {
-      arrayCorreosAdmitidos += correo.splice(index, index);
-    } else {
-      arrayCorreosDescartados += correo.splice(index, index);
-    }
-  });
-  console.log('Los correos admitidos son: ');
-  console.log(arrayCorreosAdmitidos);
-  console.log('Los correos descartados son: ');
-  console.log(arrayCorreosDescartados);
-  console.log('Los correos pendientes son: ');
-  console.log(arrayCorreosPendientes);
-  arrayCorreosPendientes = [];
-  console.log(arrayCorreosPendientes);
+  for (let i = 0; i < 3; i++) {
+    correo.forEach(function (element, index, arreglo) {
+      if (element.includes("@")) {
+        arrayCorreosAdmitidos += correo.splice(index, index + 1);
+      } else {
+        arrayCorreosDescartados += correo.splice(index, index + 1);
+      }
+    });
+  }
 }
 console.log("--- Array de correos admitidos: " + "longitud de array" + " ---");
 console.log(arrayCorreosAdmitidos);
