@@ -15,7 +15,7 @@ let arrayCorreosAdmitidos = [
 let arrayCorreosDescartados = [];
 
 function verificarCorreo(correo) {
-  for (et i = 0l;correo.length != 0; i++) {
+  for (let i = 0;correo.length != 0; i++) {
       if (correo[i].includes("@") && correo[i].indexOf('@') != 0) {
         arrayCorreosAdmitidos += correo.splice([i], [i] +1);
         i -= 1;
