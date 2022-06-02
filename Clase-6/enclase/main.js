@@ -5,25 +5,23 @@ const cuadroResultado = document.getElementById("total");
 const usuario = document.getElementById("nombre");
 const pago = document.getElementById("pago");
 
-function repartir() {
+// alt +96 para crear backtips
+
+function enviar() {
   agregarGastosAListas();
   ultimoAPantalla();
   mostrarPagoIndividualEnHTML();
 }
 
 function agregarGastosAListas() {
-  usuarios.push(usuarios.value);
+  usuarios.push(usuario.value);
   pagos.push(parseInt(pago.value));
 }
 
 function ultimoAPantalla() {
   const li = document.createElement("li");
-  const text = document.createTextNode(
-    // alt +96 para crear backtips
-    `${usuario.value} : Pagó $ ${pago.value}`
-  );
+  const text = document.createTextNode(`${usuario.value}: Pagó $${pago.value}`);
   li.classList.add("list-group-item");
-
   li.appendChild(text);
   listado.appendChild(li);
 }
@@ -39,8 +37,8 @@ function sumarValores(pagos) {
 function mostrarPagoIndividualEnHTML() {
   const total = sumarValores(pagos);
   const aporteIndividual = total / usuarios.length;
-  cuadroResultado.innerText = `Total: ${total}
-                                A cada uno le toca aportar: ${aporteIndividual.toFixed(
+  cuadroResultado.innerText = `Total: $${total}
+                                A cada uno le toca aportar: $${aporteIndividual.toFixed(
                                   2
                                 )}`;
 }
